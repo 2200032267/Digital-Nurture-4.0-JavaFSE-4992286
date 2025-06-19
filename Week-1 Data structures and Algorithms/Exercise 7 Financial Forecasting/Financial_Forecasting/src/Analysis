@@ -1,0 +1,35 @@
+Step 1: Understanding Recursive Algorithms
+
+What is Recursion?
+Recursion is a programming technique where a function calls itself to solve a problem by breaking it into smaller subproblems.
+
+Components:
+Base Case: The simplest scenario where the function stops calling itself.
+Recursive Case: The part where the function calls itself with modified input to reach the base case.
+
+Step 4: Analysis
+
+Time Complexity
+Metric				Value
+Time Complexity		O(n) 
+Space Complexity	O(n)
+
+Optimizing the Solution
+
+1. Convert to Iteration
+public static double calculateFutureValueIterative(double principal, double annualGrowthRate, int years) {
+    double currentValue = principal;
+    for (int i = 0; i < years; i++) {
+        currentValue *= (1 + annualGrowthRate);
+    }
+    return currentValue;
+}
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+->Faster, safer, and memory-efficient
+
+Conclusion
+The recursive method clearly illustrates how future value builds upon previous years' results.
+However, for large-scale or real-world use, an iterative solution is preferred due to its better performance, memory efficiency, and safety.
