@@ -5,7 +5,7 @@ Big O notation describes the efficiency of an algorithm in terms of time or spac
 
 Common Time Complexities:
 
-Notation	        Description
+Notation	    Description
 O(1)			Constant time – runtime doesn't change with input size. 
 O(log n)		Logarithmic time – input is halved each step. 
 O(n)			Linear time – runtime increases proportionally to input size. 
@@ -14,18 +14,18 @@ O(n²)			Quadratic time – nested loops.
 Best, Average, and Worst-Case Scenarios:
 
 Best Case-	    The algorithm performs the minimum steps 
-Average Case-	    Expected performance across all inputs 
+Average Case-	Expected performance across all inputs 
 Worst Case-	    Maximum steps required 
 
 Step 4: Analysis and Time Complexity Comparison
 
 Time Complexity Table
 
-Feature			Linear Search		       Binary Search
+Feature			Linear Search		Binary Search
 Best Case		O(1) 				O(1) 
-Average Case		O(n)				O(log n)
+Average Case	O(n)				O(log n)
 Worst Case		O(n) 				O(log n) 
-Pre-requisite		None				Requires sorted array 
+Pre-requisite	None				Requires sorted array 
 
 Which Algorithm is More Suitable for the Platform?
 
