@@ -1,0 +1,40 @@
+ Step 1: Understanding Asymptotic Notation
+ 
+What is Big O Notation?
+Big O notation describes the efficiency of an algorithm in terms of time or space as the input size n grows. It helps developers analyze and compare the scalability of different algorithms.
+
+Common Time Complexities:
+
+Notation	    Description
+O(1)			Constant time – runtime doesn't change with input size. 
+O(log n)		Logarithmic time – input is halved each step. 
+O(n)			Linear time – runtime increases proportionally to input size. 
+O(n²)			Quadratic time – nested loops. 
+
+Best, Average, and Worst-Case Scenarios:
+
+Best Case-	    The algorithm performs the minimum steps 
+Average Case-	Expected performance across all inputs 
+Worst Case-	    Maximum steps required 
+
+Step 4: Analysis and Time Complexity Comparison
+
+Time Complexity Table
+
+Feature			Linear Search		Binary Search
+Best Case		O(1) 				O(1) 
+Average Case	O(n)				O(log n)
+Worst Case		O(n) 				O(log n) 
+Pre-requisite	None				Requires sorted array 
+
+Which Algorithm is More Suitable for the Platform?
+
+Performance at Scale:
+An e-commerce platform can have millions of products.
+
+Linear Search: May take up to 1,000,000 comparisons in the worst case – too slow for real-time user experience.
+Binary Search: Needs only about 20 comparisons for 1,000,000 items (since 2²⁰ ≈ 1,000,000) – much faster.
+
+Conclusion:
+Binary Search is clearly more suitable for an e-commerce platform due to its logarithmic time complexity and efficiency at scale.
+Linear Search is impractical for large datasets due to its linear time growth and slow response times.
