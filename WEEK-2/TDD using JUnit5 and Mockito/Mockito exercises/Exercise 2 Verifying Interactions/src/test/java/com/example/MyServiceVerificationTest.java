@@ -47,10 +47,8 @@ public class MyServiceVerificationTest {
 
         service.processAndSendData(input);
 
-        // ✅ Use eq() for both arguments to avoid InvalidUseOfMatchersException
         verify(mockApi).sendData(eq("Processed: SOME IMPORTANT DATA"), eq(2));
 
-        // ✅ You can also use contains() and matchers together
         verify(mockApi).sendData(contains("IMPORTANT"), eq(2));
     }
 
