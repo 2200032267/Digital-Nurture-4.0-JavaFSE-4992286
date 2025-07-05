@@ -1,0 +1,28 @@
+1. JPA (Java Persistence API)
+What it is: A specification (JSR 338) defined by Java for ORM (Object Relational Mapping).
+Does not provide implementation, only guidelines.
+Think of it as an interface — to use it, you need an implementation (like Hibernate).
+Example: EntityManager, @Entity, @Id, @GeneratedValue are defined in JPA.
+
+2. Hibernate
+What it is: A concrete implementation of JPA and also a standalone ORM framework.
+Provides its own features beyond JPA, like:
+Hibernate caching
+Custom query language (HQL)
+Lazy loading, batch fetching
+Works under the hood when using JPA or Spring Data JPA (most popular provider).
+So,Hibernate = JPA implementation + extra ORM capabilities.
+
+3. Spring Data JPA
+What it is: A Spring module that builds on top of JPA (and Hibernate).
+Goal: To simplify data access layer with no boilerplate code.
+Provides:
+Repositories (JpaRepository, CrudRepository)
+Automatic query generation from method names
+Easy pagination, sorting, projections, specifications
+
+->JPA (Java Persistence API) is a specification, not an implementation. It defines a set of rules and interfaces for object-relational mapping (ORM) in Java. JPA on its own cannot be used directly—it requires an implementation like Hibernate or EclipseLink. For example, in JPA, you typically define entities using annotations like @Entity and @Id.
+
+->Hibernate is an implementation of the JPA specification and also offers additional features beyond JPA. It’s a powerful and widely used ORM framework that provides tools to map Java objects to relational database tables. Hibernate can work with or without JPA and includes configuration files like hibernate.cfg.xml or properties such as spring.jpa.hibernate.ddl-auto for setup.
+
+->Spring Data JPA is an abstraction layer built on top of JPA (usually backed by Hibernate). Its main goal is to reduce boilerplate code in data access layers. With Spring Data JPA, you can write interfaces like UserRepository extends JpaRepository<User, Long> and Spring will automatically generate the implementation at runtime. However, Spring Data JPA still needs a JPA provider (like Hibernate) under the hood to function.
